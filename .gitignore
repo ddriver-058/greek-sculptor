@@ -1,0 +1,8 @@
+argoapp-dev.yaml
+argoapp-prd.yaml
+populate-regcred.sh
+pushToCreate.sh
+buildImage.sh
+app/buildImage.sh
+api/buildImage.sh
+design

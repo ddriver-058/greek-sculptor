@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: app
+    ports:
+      - 8050:8050
+    volumes:
+      - ./app:/app
+    command: /bin/sh -c "while sleep 1000; do :; done" # override to disable app (e.g., for development)
+  api:
+    build: 
+      context: api
+    volumes:
+      - ./api:/api
+    command: /bin/sh -c "while sleep 1000; do :; done"

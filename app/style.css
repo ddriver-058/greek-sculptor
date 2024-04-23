@@ -1,0 +1,15 @@
+.value-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.value-box-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.value-box-value {
+    font-size: 24px;
+}
