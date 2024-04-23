@@ -11,4 +11,8 @@ RUN pip install dash-bootstrap-components
 
 COPY . /app
 
+RUN chmod -R 555 /app
+
+USER 1000
+
 CMD python /app/app.py

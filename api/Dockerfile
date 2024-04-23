@@ -12,6 +12,10 @@ RUN pip install QuantLib
 
 COPY . /api
 
+RUN chmod -R 555 /api
+
+USER 1000
+
 WORKDIR /api
 
 CMD python /api/api.py
